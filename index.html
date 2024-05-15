@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripts.js">
+    <title>Seu Login</title>
+</head>
+<body>
+    
+<div class="cartao-login">
+    <h2>Bem Vindo ao Site da Espacial</h2>
+    <h3>Insira suas credenciais</h3>
+
+    <form id="form" class="form">
+        <div class="form-content">
+            <label for="username">Nome</label>
+            <input type="text" id="username" placeholder="Digite aqui seu nome" />
+        </div>
+
+        <div class="form-content">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite aqui seu email" />
+        </div>
+
+        <div class="form-content">
+            <label for="password">Senha</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Digite aqui sua senha" />
+                <span class="password-toggle" onclick="togglePasswordVisibility()">
+                    <i id="toggleIcon" class="bi bi-eye-fill"></i>
+                </span>
+            </div>
+        </div>
+
+        <button type="button" id="entrarButton">Entrar</button>
+        <script src=".//scripts.js"></script>
+
+    </form>
+</div>
+</body>
+</html>
